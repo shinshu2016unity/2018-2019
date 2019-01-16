@@ -14,7 +14,7 @@ public class updown : MonoBehaviour {
 	void Update () {
         float ypos = transform.position.y;
         if (ypos < low || ypos > high) sign *= -1f;
-        Vector3 mv  = new Vector3(0f,1f*sign,0f);
+        Vector3 mv  = new Vector3(0f,0.1f*sign,0f);
         transform.Translate(mv);
     }
 }

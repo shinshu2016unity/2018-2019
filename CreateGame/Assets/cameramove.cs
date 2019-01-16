@@ -16,10 +16,10 @@ public class cameramove : MonoBehaviour
     public Camera cam;
     void Update()
     {
-        if(transform.position.y < 900)
+        if(transform.position.y < 90)
         { 
-            transform.Translate(new Vector3(0, 1f, 0)); //上昇
-            transform.Rotate(new Vector3(0, 1, 0));//回転
+            transform.Translate(new Vector3(0, 0.1f, 0)); //上昇
+            transform.Rotate(new Vector3(0, 1f, 0));//回転
         }
         else
         {
