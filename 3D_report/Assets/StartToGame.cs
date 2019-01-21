@@ -13,7 +13,7 @@ public class StartToGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) || Input.GetKeyDown("space"))
         {
             SceneManager.LoadScene("Unity1"); //ゲーム画面
         }
